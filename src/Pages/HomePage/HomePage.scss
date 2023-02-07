@@ -1,0 +1,12 @@
+@use "../../Styles/Partials/resets"; 
+@use "../../Styles/Partials/mixins" as *; 
+
+.test{
+    background-color: red;
+    @include tablet{
+        background-color: lightgreen;
+    }
+    @include desktop{
+        background-color: lightsalmon;
+    }
+}
