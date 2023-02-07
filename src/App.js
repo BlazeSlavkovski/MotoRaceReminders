@@ -10,10 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>}></Route>
-        <Route path="/raceseries" element={<RaceSeriesPage/>}></Route>
-        <Route path="/raceseries/races" element={<SpecificRacePage/>}></Route>
-        <Route path="*" element={<NotFound/>}></Route>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/raceseries" element={<RaceSeriesPage/>}/>
+        <Route path="/raceseries/races" element={<SpecificRacePage/>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
   );
