@@ -1,4 +1,6 @@
 @use './variables' as *;
+
+
 *,
 *::before,
 *::after {
@@ -13,5 +15,5 @@ body {
   font-size: 1.6rem;
   margin: 0;
   font-family: 'Red Hat Display', sans-serif;
-  background-color: lightblue;
+
 }

@@ -1,10 +1,13 @@
 
+import Header from "../../Components/Header/Header"
 
 export default function NotFound(){
 
     return(
         <>
-            This is the Not Found Page
+            <Header />
+
+            Thank you for taking interest in this sport, we are working on an update for this page and it will come soon
         </>
     )
 }

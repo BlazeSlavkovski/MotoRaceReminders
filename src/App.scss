@@ -1,2 +1,13 @@
 @use "./Styles/Partials/resets";
 @use "./Styles/Partials/variables" as *; 
+@use "./Styles/Partials/mixins" as *;
+
+body{
+    background-color: lightblue;
+    @include tablet{
+      background-color: lightcoral;
+    }
+    @include desktop{
+        background-color: lightgreen;
+    }
+}

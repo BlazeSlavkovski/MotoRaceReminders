@@ -1,0 +1,41 @@
+@use "../../Styles/Partials/resets"; 
+@use "../../Styles/Partials/mixins" as *; 
+
+
+.seriescard{
+    border-radius: 4rem;
+    
+    height: 20rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    
+    @include tablet{
+        width:47%;
+        height:30rem;
+    }
+    @include desktop{
+        height:30rem;
+    }
+    &__link{
+        text-decoration: none;
+        &__button{
+            margin:0.5rem auto;
+            text-align: center;
+            width:80%;
+            background-color: #2A2222;
+            border-radius: 8px;
+            color:white
+        }
+    }
+    &__title{
+        padding-left: 2rem;
+        color:white;
+        font-weight: 600;
+    }
+}
+
