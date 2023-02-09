@@ -2,6 +2,7 @@
 @use "../../Styles/Partials/mixins" as *; 
 
 .test{
+    width:100%;
     background-color: red;
     @include tablet{
         background-color: lightgreen;
@@ -9,4 +10,8 @@
     @include desktop{
         background-color: lightsalmon;
     }
+}
+
+.image{
+    width:100%;
 }
