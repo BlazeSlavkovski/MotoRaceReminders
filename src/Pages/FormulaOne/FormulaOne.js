@@ -3,6 +3,7 @@ import Header from "../../Components/Header/Header"
 import axios from "axios"
 import {useState} from "react"
 import { useEffect } from "react";
+import RaceCard from "../../Components/RaceCard/RaceCard";
 
 export default function FormulaOne(){
 
@@ -24,12 +25,11 @@ export default function FormulaOne(){
     if(!data){
         return <div>loading....</div>
     }
-    console.log(data)
+    
 
     const races = data.map((cir) =>(
         <>
-            <img className="image" src={cir.ActionImage}></img>
-            <img className="image" src={cir.CircuitImage}></img>
+            <RaceCard raceData={cir}/>
         </>
         
     ))
@@ -37,8 +37,12 @@ export default function FormulaOne(){
     return(
         <>
             <Header/>
-            <p>Races for the 2023 Season</p>
+            <p className="races__title">Races for the 2023 Season</p>
+            <div className="races">
+                
                 {races}
+            </div>
+                
         </>
     )
 }

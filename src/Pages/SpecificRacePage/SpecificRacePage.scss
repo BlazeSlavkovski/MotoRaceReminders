@@ -1,0 +1,14 @@
+@use "../../Styles/Partials/resets"; 
+@use "../../Styles/Partials/mixins" as *; 
+
+// .specificRace__details{
+    
+// }
+
+
+
+.specificRace{
+    &__circuit{
+        width:100%;
+    }
+}

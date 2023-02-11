@@ -3,7 +3,7 @@
 
 
 .seriescard{
-    border-radius: 4rem;
+    border-radius: 2rem;
     
     height: 20rem;
     margin: 2rem 0;
@@ -25,11 +25,14 @@
         text-decoration: none;
         &__button{
             margin:0.5rem auto;
-            text-align: center;
+            background-color: white;
+            border-radius: 0.5rem;
+            padding:0 1.5rem;
             width:80%;
-            background-color: #2A2222;
-            border-radius: 8px;
-            color:white
+            // margin-right:1rem;
+            font-size: 1.2rem;
+            text-align: center;
+            padding-top:0.2rem;
         }
     }
     &__title{

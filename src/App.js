@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/raceseries" element={<RaceSeriesPage/>}/>
         <Route path="/raceseries/formulaone" element={<FormulaOne/>}/>
+        <Route path="/raceseries/formulaone/:name" element={<SpecificRacePage/>}/>
         <Route path="/following" element={<FollowingPage/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>

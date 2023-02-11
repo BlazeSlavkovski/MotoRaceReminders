@@ -1,2 +1,24 @@
 @use "../../Styles/Partials/resets"; 
 @use "../../Styles/Partials/mixins" as *; 
+
+
+.races{
+    padding:0 1rem;
+    @include tablet{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @include desktop{
+        max-width: 128rem;
+        margin: 0 auto;
+    }
+    &__title{
+        padding:0 1rem;
+        @include desktop{
+            max-width: 128rem;
+            margin: 0 auto;
+        }
+    }
+}
