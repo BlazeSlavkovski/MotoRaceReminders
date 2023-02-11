@@ -8,7 +8,100 @@
 
 
 .specificRace{
+    
     &__circuit{
         width:100%;
+        background-color: #585858;
+        padding:2rem;
+        margin:0 auto;
+        border-radius: 4rem;
+        
+        
     }
+
+    &__title{
+        padding-left:2rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+    }
+    &__info{
+        padding-left:2rem;
+        padding-right:2rem;
+        font-size: 1.8rem;
+        color: white;
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__details{
+        @include desktop{
+            max-width: 128rem;
+            margin:0 auto;
+        }
+        
+        &__containers{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #585858;
+            flex-direction: column;
+            width: 80%;
+            border-radius: 3rem;
+            margin:0 auto;
+            margin-bottom: 1rem;
+            @include tablet{
+                width:48%;
+                margin:0 auto;
+                
+            }
+
+            &--modifer{
+                @include tablet{
+                    width:80%;
+                }
+            }
+
+            
+        }
+        &__titleButton{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            
+            margin:0 auto;
+            font-size: 2.3rem;
+            &__title{
+                font-size: 2.7rem;
+            }
+            &__button{
+                background-color: white;
+                border-radius: 0.5rem;
+                text-align: center;
+                color: black;
+                font-size: 1.2rem;
+                padding: 0.2rem 2rem;
+                height: 5rem;
+            }
+        }
+    }
+}
+
+.tabletDesktopWrap{
+    @include tablet{
+        display: flex;
+        justify-content: space-between;
+        width:80%;
+        margin:0 auto;
+    }
+}
+
+.tabletModifier{
+    @include tablet{
+        margin:0;
+        margin-bottom: 1rem;
+    }
+    
 }
