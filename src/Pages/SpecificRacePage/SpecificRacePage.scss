@@ -105,3 +105,12 @@
     }
     
 }
+
+.back{
+    height:2rem;
+    padding:0 1rem;
+    margin:3.5rem 0;
+    &__wrapper{
+        display:flex;
+    }
+}

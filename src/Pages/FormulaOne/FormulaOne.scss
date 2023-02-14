@@ -14,11 +14,18 @@
         max-width: 128rem;
         margin: 0 auto;
     }
-    &__title{
-        padding:0 1rem;
+     
+    
+    &__nav{
+        display:flex;
         @include desktop{
             max-width: 128rem;
             margin: 0 auto;
+        }
+        &__back{
+            height:2rem;
+            padding:0 1rem;
+            margin:1.6rem 0;
         }
     }
 }

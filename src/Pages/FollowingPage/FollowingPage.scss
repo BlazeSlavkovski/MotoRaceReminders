@@ -1,0 +1,12 @@
+@use "../../Styles/Partials/resets"; 
+@use "../../Styles/Partials/mixins" as *; 
+
+
+.races__following{
+    padding:0 1rem;
+    padding-top:2rem;
+    @include desktop{
+        max-width: 128rem;
+        margin: 0 auto;
+    }
+}
