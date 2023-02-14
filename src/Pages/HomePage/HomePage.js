@@ -1,7 +1,7 @@
 import "./HomePage.scss"
 import Header from "../../Components/Header/Header";
 
-//NOT DONE
+//NOT DONE This will be used for future development 
 export default function HomePage(){
 
 
@@ -10,7 +10,7 @@ export default function HomePage(){
             <Header/>
             <div className="test"> 
             
-                dsadsa
+                Development In Progress
             </div>
             
         </>

@@ -15,7 +15,10 @@
         margin: 0 auto;
     }
      
-    
+    &__title{
+        font-size: 2.7rem;
+        color:white;
+    }
     &__nav{
         display:flex;
         @include desktop{
@@ -25,7 +28,7 @@
         &__back{
             height:2rem;
             padding:0 1rem;
-            margin:1.6rem 0;
+            margin:3.7rem 0;
         }
     }
 }

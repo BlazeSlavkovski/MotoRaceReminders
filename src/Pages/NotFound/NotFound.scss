@@ -1,0 +1,11 @@
+@use "../../Styles/Partials/resets"; 
+@use "../../Styles/Partials/mixins" as *; 
+
+
+.NotFound{
+    max-width: 128rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    margin:2rem;
+}

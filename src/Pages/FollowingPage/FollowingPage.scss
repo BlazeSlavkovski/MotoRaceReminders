@@ -4,9 +4,10 @@
 
 .races__following{
     padding:0 1rem;
-    padding-top:2rem;
+    color:white;
+    font-size: 2.7rem;
     @include desktop{
         max-width: 128rem;
-        margin: 0 auto;
+        margin: 2rem auto;
     }
 }

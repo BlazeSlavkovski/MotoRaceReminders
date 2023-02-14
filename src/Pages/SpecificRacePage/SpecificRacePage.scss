@@ -60,6 +60,7 @@
             &--modifer{
                 @include tablet{
                     width:80%;
+                    
                 }
             }
 
@@ -73,6 +74,7 @@
             
             margin:0 auto;
             font-size: 2.3rem;
+            color:white;
             &__title{
                 font-size: 2.7rem;
             }

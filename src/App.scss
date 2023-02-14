@@ -3,11 +3,6 @@
 @use "./Styles/Partials/mixins" as *;
 
 body{
-    background-color: lightblue;
-    @include tablet{
-      background-color: lightcoral;
-    }
-    @include desktop{
-        background-color: lightgreen;
-    }
+    background-color: #808080;
+    
 }
