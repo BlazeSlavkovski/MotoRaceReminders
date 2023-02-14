@@ -28,7 +28,6 @@ export default function SpecificRacePage() {
       let { data: followingData } = await axios.get(`http://localhost:8080/following/${race.name}`);
       //check to see if the race exists in following data and then set following state to true if that is the case
       if(followingData){
-        console.log("found found ofund ofufnd fsdlnams")
         setFollowing(true)
       }
       
