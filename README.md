@@ -30,8 +30,6 @@ MotoRaceReminders is a one-stop shop for everything race related. In this app, y
     
 ## Lessons Learned and Next Steps
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
-
 I learned throughout this project that good development leaves room for future development. This in turn will allow for faster iterations of the current code. Making clean and reuseable components makes development so much easier. Additionally taking the time to properly plan out the Frontend and Backend of an application will pay dividends when development actually starts
 
 Specific Challenges that I have faced throughout this project include managing state and having the functionality on buttons as will as data on the screen change because of it. For example I have a timer feature which lets the user know the race is going to start and counts down from the current date and time to the races date and time. Figuring out this countdown feature was a challenge but I solved it using a useEffect hook. Another challenge I faced was having the follow and unfollow functionality on the same button and deciding when to do what feature. This required to me scan through the data asynchronously to see if the user is already following that specific race.  
