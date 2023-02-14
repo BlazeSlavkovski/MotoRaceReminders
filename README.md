@@ -1,70 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MotoRaceReminders
 
-## Available Scripts
+MotoRaceReminders is a one-stop shop for everything race related. In this app, you can browse through a variety of race series, read various information related to those races (such as start times, location, lap records, etc) and be able to follow/unfollow your favourite races which can then be view in the following tab of the application.
 
-In the project directory, you can run:
 
-### `npm start`
+ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## TechStack Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React Frontend with Axios calls to the backend
+- Sass for Frontend Styling
+- React Router Dom used for Frontend Navigation
+- Node with Express Backend
+- Cors for Resource Sharing
+- DotEnv used for port information
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation Instructions
+- Git Clone the Frontend and Backend Repo 
+- Create a .env file for backend with port=8080
+- Dependencies for Frontend :
+    - React Router Dom
+    - Axios
+    - Sass
+- Dependencies for Backend:
+    - Express
+    - DotEnv
+    - Cors
+    
+## Lessons Learned and Next Steps
 
-### `npm run build`
+What did you learn while building this project? What challenges did you face and how did you overcome them?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I learned throughout this project that good development leaves room for future development. This in turn will allow for faster iterations of the current code. Making clean and reuseable components makes development so much easier. Additionally taking the time to properly plan out the Frontend and Backend of an application will pay dividends when development actually starts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Specific Challenges that I have faced throughout this project include managing state and having the functionality on buttons as will as data on the screen change because of it. For example I have a timer feature which lets the user know the race is going to start and counts down from the current date and time to the races date and time. Figuring out this countdown feature was a challenge but I solved it using a useEffect hook. Another challenge I faced was having the follow and unfollow functionality on the same button and deciding when to do what feature. This required to me scan through the data asynchronously to see if the user is already following that specific race.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Next Steps for this project include setting up a DB for this app. It is currently reading and writing to JSON files because of time constraints. Additionally have user accounts and authentication so multiple user can use it at once. Furthermore include additonal data in the backend for other racing series (Only Formula 1 works currently).
+Another feature after all of the above are implemented is to have chat and stream feature so users can log in and watch their favourite races together in chatrooms. Also push notifications when a race is going to start so users get reminded and do not miss the races they are following. There are plenty more features, the ones mentioned are a few that come to mind that would enchance the user experience from this current version. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://user-images.githubusercontent.com/40073550/218876733-8cd78c72-c975-48af-b41f-568b301d487a.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/40073550/218876815-42430df7-610a-406b-a834-9480d79023c0.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://user-images.githubusercontent.com/40073550/218876873-9c088c69-4494-4463-9a40-83eed2efd61f.png)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://user-images.githubusercontent.com/40073550/218876957-27973277-9434-435e-8548-b9c70aa84875.png)
